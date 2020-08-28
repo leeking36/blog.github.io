@@ -9,7 +9,7 @@ name: leeking36
 description: 一个热爱学习的前端菜鸟
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: images/leeking-logo.png
+avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
 
 #
 # Flags below are optional
