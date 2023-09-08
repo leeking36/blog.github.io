@@ -27,15 +27,6 @@ body {
   flex-wrap: nowrap;
 }
 
-.container {
-  margin: 0 auto;
-  max-width: 1200px;
-  padding: 0 10px;
-  width: 100%;
-  flex: 1;
-  overflow-y: auto;
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
   color: $darkerGray;
@@ -157,8 +148,13 @@ img {
 //
 
 .wrapper-masthead {
-  margin-bottom: 50px;
   flex: 0 0 111px;
+}
+.wrapper-masthead > .container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 10px;
+  width: 100%;
 }
 
 .masthead {
@@ -247,22 +243,38 @@ nav {
 //
 // .main
 //
+#main{
+  flex: 1;
+  padding: 50px 0;
+  overflow-y: auto;
+}
 
-.posts > .post {
+.posts{
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.posts > .left {
+
+}
+
+.posts > .right {
+  
+}
+
+.posts > .right .post {
   padding-bottom: 2em;
   border-bottom: 1px solid $lightGray;
 }
 
-.posts > .post:last-child {
+.posts > .right .post:last-child {
   padding-bottom: 1em;
   border-bottom: none;
 }
 
 .post {
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
   blockquote {
     margin: 1.8em .8em;
     border-left: 2px solid $gray;
@@ -281,20 +293,8 @@ nav {
     font-size: 15px;
   }
 }
-.post .left{
-  flex:  0 0 240px;
-  height: 100%;
-  overflow: auto;
-  background-color: antiquewhite;
-}
-.post .right{
-  flex:  1;
-  height: 100%;
-  overflow: auto;
-}
 
 .wrapper-footer {
-  margin-top: 50px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   background-color: $lightGray;
