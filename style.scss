@@ -21,13 +21,19 @@ body {
 	background: $white;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
+  max-width: 1200px;
   padding: 0 10px;
   width: 100%;
+  flex: 1;
+  overflow-y: auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -152,6 +158,7 @@ img {
 
 .wrapper-masthead {
   margin-bottom: 50px;
+  flex: 0 0 111px;
 }
 
 .masthead {
@@ -252,6 +259,10 @@ nav {
 }
 
 .post {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   blockquote {
     margin: 1.8em .8em;
     border-left: 2px solid $gray;
@@ -270,12 +281,24 @@ nav {
     font-size: 15px;
   }
 }
+.post .left{
+  flex:  0 0 240px;
+  height: 100%;
+  overflow: auto;
+  background-color: antiquewhite;
+}
+.post .right{
+  flex:  1;
+  height: 100%;
+  overflow: auto;
+}
 
 .wrapper-footer {
   margin-top: 50px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   background-color: $lightGray;
+  flex: 0 0 90px;
 }
 
 footer {
