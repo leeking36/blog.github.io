@@ -235,7 +235,6 @@ nav {
 //
 #main{
   flex: 1;
-  padding: 0 50px;
   .posts{
     height: calc(100vh - 180px);
     display: flex;
@@ -256,6 +255,7 @@ nav {
       .post {
         padding-bottom: 2em;
         border-bottom: 1px solid $lightGray;
+        padding: 0 50px;
         blockquote {
           margin: 1.8em .8em;
           border-left: 2px solid $gray;
