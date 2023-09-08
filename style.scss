@@ -148,8 +148,7 @@ img {
 //
 
 .wrapper-masthead {
-  flex: 0 0 111px;
-  border-bottom: 1px solid #eee;
+  flex: 0 0 110px;
   background-color: black;
   .container {
     margin: 0 auto;
@@ -236,15 +235,16 @@ nav {
 //
 #main{
   flex: 1;
-  padding: 50px 0;
   .posts{
-    height: 100%;
+    height: calc(100vh - 200px);
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     .left {
       flex: 0 0 240px;
       overflow-y: auto;
+      margin-right: 40px;
+      background-color: #eee;
     }
     .right {
       flex: 1;

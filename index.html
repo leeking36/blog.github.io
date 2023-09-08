@@ -7,14 +7,14 @@ layout: default
     <ul>
       {% for post in site.posts %}
       <li>
-        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        <a href="#{{ post.anchor }}">{{ post.title }}</a>
       </li>
       {% endfor %}
     </ul>
   </div>
   <div class="right">
     {% for post in site.posts %}
-      <article class="post">
+      <article class="post" id="{{ post.anchor }}">
   
         <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
   
