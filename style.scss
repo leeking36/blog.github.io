@@ -281,15 +281,21 @@ nav {
   }
   .post {
     padding: 0 50px;
-    .highlight{
-      overflow: auto!important;
-      border: none!important;
-      box-shadow: none!important;
-      margin: 0!important;
-      code{
-        span{
-          color: brown!important;
+    .highlighter-rouge{
+      .highlight{
+        overflow: auto!important;
+        border: none!important;
+        box-shadow: none!important;
+        margin: 0!important;
+        code{
+          span{
+            color: brown!important;
+          }
         }
+      }
+      .language-plaintext{
+        background: black;
+        color: #fff;
       }
     }
   }
