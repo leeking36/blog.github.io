@@ -242,7 +242,7 @@ nav {
     flex-direction: row;
     flex-wrap: nowrap;
     .left {
-      flex: 0 0 240px;
+      flex: 0 0 20%;
       overflow-y: auto;
       background-color: #eee;
       ul{
@@ -297,6 +297,9 @@ nav {
         background: black;
         color: #fff;
       }
+    }
+    &:last-child {
+      padding-bottom: 1em;
     }
   }
 }
