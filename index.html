@@ -1,3 +1,7 @@
+<!--
+ * @Author: Leeking
+ * @Date: 2023-09-08 15:22:59
+-->
 ---
 layout: default
 ---
@@ -19,7 +23,8 @@ layout: default
         <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
   
         <div class="entry">
-          {{ post.excerpt }}
+          <span>{{ post.excerpt }}</span>
+          <span>{{ post.update }}</span>
         </div>
   
         <a href="{{ site.baseurl }}{{ post.url }}" target="_blank" class="read-more">查看更多</a>

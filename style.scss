@@ -256,7 +256,10 @@ nav {
       .post {
         padding-bottom: 2em;
         border-bottom: 1px solid $lightGray;
-        padding: 0 50px;
+        padding: 0 50px 10px;
+        &>h1{
+          font-size: 24px;
+        }
         blockquote {
           margin: 1.8em .8em;
           border-left: 2px solid $gray;
@@ -275,6 +278,16 @@ nav {
         &:last-child {
           padding-bottom: 1em;
           border-bottom: none;
+        }
+        .entry{
+          &>span{
+            border: 1px solid #eee;
+            padding: 2px 5px;
+            border-radius: 4px;
+            background: #f5f5f5;
+            margin: 0 10px 10px 0;
+            display: inline-block;
+          }
         }
       }
     }
